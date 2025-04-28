@@ -1,11 +1,10 @@
-# MLinFinance
+**Implémentation de stratégies d'arbitrage statistique par deep learning**
 
-**Deep Learning Statistical Arbitrage – Implémentation et Analyse**
+Ce dépôt explore différentes méthodes d'arbitrage statistique sur actions américaines, en utilisant les **portefeuilles résiduels** (Fama-French, PCA) extraits du dépôt [dlsa-public](https://github.com/gregzanotti/dlsa-public.git).
 
-Ce dépôt contient le code utilisé pour reproduire et analyser les résultats de l'article :  
-> *Deep Learning Statistical Arbitrage* — Guijarro-Ordoñez, Pelger, Zanotti (2022).
+Nous tuilons ensuite ces portefeuilles pour entraîner des modèles prédictifs.
 
-Nous explorons différentes méthodes d'arbitrage statistique sur actions américaines :
-- Construction de **portefeuilles résiduels** (Fama-French, PCA),
-- Extraction de **signaux** avec modèles classiques (FFT+NN) et avancés (**CNN+Transformer**),
-- Allocation dynamique optimisée pour maximiser le **ratio de Sharpe**.
+## Contenu
+- `results/` : Résultats des stratégies (Sharpe, rendement cumulé, etc.)
+- `train_models.ipynb` : Notebook d'entraînement des modèles.
+- `visualize.ipynb` : Notebook de visualisation des performances.
